@@ -2,7 +2,7 @@
 	"easycom": {
 		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
 	},
-	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+	"pages": [ 
 		{
 			"path": "pages/index/index",
 			"style": {
@@ -10,32 +10,72 @@
 			}
 		},
 		{
+			"path": "pages/goods/goods",
+			"style": {
+				"navigationBarTitleText": "商品"
+			}
+		},
+		{
+			"path": "pages/cart/cart",
+			"style": {
+				"navigationBarTitleText": "购物车"
+			}
+		},
+		{
 			"path": "pages/center/index",
 			"style": {
-				"navigationBarTitleText": "个人中心"
+				"navigationBarTitleText": "我的"
+			}
+		},
+		{
+			"path": "pages/auth/login",
+			"style": {
+				"navigationBarTitleText": "登录页面"
+			}
+		},
+		{
+			"path": "pages/auth/register",
+			"style": {
+				"navigationBarTitleText": "注册页面"
+			}
+		},
+		{
+			"path": "pages/center/baseInfo",
+			"style": {
+				"navigationBarTitleText": "设置"
 			}
 		}
 	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "图书商城",
+		"navigationBarTitleText": "uView",
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8"
 	},
 	"tabBar": {
 	    "color": "#909399",
-	    "selectedColor": "#303133",
+	    "selectedColor": "#d4237a",
 	    "borderStyle": "black",
 	    "backgroundColor": "#ffffff",
 	    "list": [{
 	        "pagePath": "pages/index/index",
-	        "iconPath": "static/index.png",
-	        "selectedIconPath": "static/index-selected.png",
+	        "iconPath": "static/unshouye.png",
+	        "selectedIconPath": "static/shouye.png",
 	        "text": "首页"
 	    }, {
+	        "pagePath": "pages/goods/goods",
+	        "iconPath": "static/unshangpin.png",
+	        "selectedIconPath": "static/shangpin.png",
+	        "text": "商品"
+	    }, {
+	        "pagePath": "pages/cart/cart",
+	        "iconPath": "static/ungouwuche.png",
+	        "selectedIconPath": "static/gouwuche.png",
+	        "text": "购物车"
+	    }, {
 	        "pagePath": "pages/center/index",
-	        "iconPath": "static/center.png",
-	        "selectedIconPath": "static/center-selected.png",
+	        "iconPath": "static/ungerenzhongxin.png",
+	        "selectedIconPath": "static/gerenzhongxin.png",
 	        "text": "我"
 	    }]
 	}
